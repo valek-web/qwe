@@ -1,0 +1,128 @@
+.services {
+  margin-top: 66px;
+  color: var(--white);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.services > p {
+  font-size: 54px;
+  font-weight: 300;
+  margin-bottom: 43px;
+}
+
+.services .services__block {
+  display: flex;
+  align-items: flex-start;
+  font-size: 24.5px;
+  border-bottom: 1px solid var(--gray-03);
+  padding-bottom: 29px;
+  margin-bottom: 36px;
+}
+
+.services .services__block .service__type {
+  color: var(--gray-01);
+  padding: 18.5px 48.5px;
+  background-color: var(--green-01);
+  border: 3px solid var(--green-01);
+  margin-right: 24px;
+}
+
+.services .services__block .service__develop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24.5px;
+}
+
+.services .services__block .service__develop div {
+  padding: 18.5px 23.5px;
+  border: 3px solid var(--green-01);
+  color: var(--green-01);
+  border-radius: 46px;
+}
+
+.services button {
+  display: flex;
+  margin: 62px auto 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .services {
+    margin-top: 40px;
+  }
+  
+  .services > p {
+    font-size: 40px;
+    margin-bottom: 26px;
+  }
+  
+  .services .services__block {
+    font-size: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .services .services__block .service__type {
+    padding: 16px 40px;
+    margin-right: 24px;
+  }
+  
+  .services .services__block .service__develop {
+    gap: 20px;
+  }
+  
+  .services .services__block .service__develop div {
+    padding: 14px 20px;
+  }
+  
+  .services button {
+    margin: 30px auto 0 auto;
+    font-size: 20px;
+    padding: 15px 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .services {
+    flex-flow: column;
+  }
+  
+  .services .services__block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .services .services__block .service__type {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+  }
+  
+  .services .services__block .service__develop {
+    gap: 14px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  .services .services__block .service__develop div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .services .services__block .service__develop div:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 516px) {
+  .services {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

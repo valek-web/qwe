@@ -1,0 +1,307 @@
+.block {
+  width: 100%;
+  max-width: 1640px;
+  height: fit-content;
+  margin: auto;
+  padding: 48px 24px 0 24px;
+  font-family: "tiktokSans", "tiktokSans Fallback";
+}
+
+.block .project {
+  margin-top: 100px;
+}
+
+.block .project .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-wrap: nowrap;
+  gap: 80px;
+}
+
+.block .project .title p {
+  font-size: 56px;
+  font-weight: 300;
+  font-family: "Montserrat";
+  width: fit-content;
+  display: flex;
+}
+
+.block .project .title p:nth-child(2n) {
+  justify-content: flex-end;
+}
+
+.block .project .title > span {
+  width: 80%;
+  height: 3px;
+  background-color: var(--green-01);
+  display: flex;
+}
+
+.block .project .data {
+  margin-top: 57px;
+  display: flex;
+  justify-content: space-between;
+  gap: 77px;
+}
+
+.block .project .data .card {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 130%;
+  border: 3px solid var(--green-01);
+  border-radius: 40px;
+  padding: 38px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 260px;
+  font-family: "tiktokSans", "tiktokSans Fallback";
+  color: var(--white);
+  max-width: 527px;
+  width: 100%;
+}
+
+.block .project .data .card .project__wrap .project__name {
+  font-family: "Montserrat";
+}
+
+.block .project .data .card.first {
+  background-image: linear-gradient(to bottom, #0d0d0d00, #0d0d0d 55%),
+    url('/images/ecobit.jpg');
+}
+
+.block .project .data .card.second {
+  background-image: linear-gradient(to bottom, #0d0d0d00, #0d0d0d 55%),
+    url('/images/kingpay.jpg');
+}
+
+.block .project .data .card.third {
+  background-image: linear-gradient(to bottom, #0d0d0d00, #0d0d0d 55%),
+    url('/images/troika.jpg');
+}
+
+.block .project .data .card.fourth {
+  background-image: linear-gradient(to bottom, #0d0d0d00, #0d0d0d 55%),
+    url('/images/sud.jpg');
+}
+
+.block .project .data .card.fifth {
+  background-image: linear-gradient(to bottom, #0d0d0d00, #0d0d0d 55%),
+    url('/images/zoltans.jpg');
+}
+
+.block .project .data .card.six {
+  background-image: linear-gradient(to bottom, #0d0d0d00, #0d0d0d 55%),
+    url('/images/kekin.jpg');
+}
+
+.block .project .data .card > p:first-child {
+  font-size: 38px;
+}
+
+.block .project .data .card div {
+  max-width: 330px;
+}
+
+.block .project .data .card div p {
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.block .project .data .card div p span:first-child {
+  border-bottom: 5px solid var(--green-01);
+}
+
+.block .project .data .card div p span:last-child {
+  font-weight: 500;
+}
+
+.block .project .data .card div a {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--gray-04);
+}
+
+.block .project .data .card div a:hover {
+  text-decoration: underline;
+}
+
+.block .project .data .video__text {
+  width: 100%;
+  height: 50vh;
+}
+
+.block .project .data .video__text .video {
+  width: 100%;
+  height: 70%;
+  background-color: #0d0d0d;
+  border: 3px solid var(--green-01);
+  border-radius: 40px;
+}
+
+.block .project .data .video__text .text {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 53px;
+  color: var(--black-01);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.block .project.right .title > span {
+  order: 1;
+}
+
+.block .project.right .title p {
+  order: 2;
+}
+
+.block .project.right .data .card {
+  order: 2;
+}
+
+.block .project.right .data .video__text {
+  order: 1;
+  text-align: right;
+}
+
+@media (max-width: 1360px) {
+  .block {
+    max-width: 1360px;
+  }
+  
+  .block .project {
+    margin-top: 100px;
+  }
+  
+  .block .project .video {
+    display: none;
+  }
+  
+  .block .project .title {
+    gap: 40px;
+  }
+  
+  .block .project .title p {
+    font-size: 40px;
+  }
+  
+  .block .project .data {
+    margin-top: 40px;
+    gap: 30px;
+  }
+  
+  .block .project .data .card > p:first-child {
+    font-size: 30px;
+  }
+  
+  .block .project .data .card div p {
+    font-size: 36px;
+  }
+  
+  .block .project .data .card div a {
+    font-size: 24px;
+  }
+  
+  .block .project .data .video__text .text {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .block .project {
+    margin-top: 120px;
+  }
+  
+  .block .project .title p {
+    font-size: 32px;
+  }
+  
+  .block .project .data {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+  }
+  
+  .block .project .data .video__text {
+    height: fit-content !important;
+  }
+  
+  .block .project .data .card {
+    width: 100%;
+    max-width: unset;
+    background-image: linear-gradient(to bottom, #0d0d0d00, #0d0d0d 70%),
+      url(https://editorial.uefa.com/resources/029a-1df9c4473798-86aef70e5796-1000/portugal_v_slovakia_group_j_-_uefa_euro_2024_european_qualifiers.jpeg);
+    order: 1 !important;
+  }
+  
+  .block .project .data .card > p:first-child {
+    font-size: 30px;
+  }
+  
+  .block .project .data .card div {
+    max-width: 60%;
+  }
+  
+  .block .project .data .card div p {
+    font-size: 30px;
+  }
+  
+  .block .project .data .card div a {
+    font-size: 20px;
+  }
+  
+  .block .project .data .video__text {
+    order: 2 !important;
+  }
+  
+  .block .project .data .video__text .text {
+    font-size: 30px;
+    text-align: left;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .block .project {
+    margin-top: 120px;
+  }
+  
+  .block .project .title p {
+    font-size: 32px;
+  }
+  
+  .block .project .title > span {
+    display: none;
+  }
+  
+  .block .project .data {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+  }
+  
+  .block .project .data .card {
+    gap: 150px;
+    background-image: linear-gradient(to bottom, rgba(13, 13, 13, 0), #0d0d0d 60%),
+      url(https://editorial.uefa.com/resources/029a-1df9c4473798-86aef70e5796-1000/portugal_v_slovakia_group_j_-_uefa_euro_2024_european_qualifiers.jpeg);
+  }
+  
+  .block .project .data .card div {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 722px) {
+  .block .project .data .video__text .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 421px) {
+  .block .project .data .video__text .text {
+    font-size: 15px;
+  }
+}

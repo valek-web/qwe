@@ -1,0 +1,286 @@
+.brief {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.brief .form {
+  width: 60%;
+}
+
+.brief .form .block {
+  padding: 40px 50px;
+  background-color: var(--gray-05);
+  border-radius: 40px;
+  margin-bottom: 22px;
+}
+
+.brief .form .block > p {
+  color: #eaeaea;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.brief .form .contacts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.brief .form .checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 24px;
+  margin-bottom: 22px;
+}
+
+.brief .form .checkboxes .badge {
+  width: fit-content;
+  display: flex;
+  cursor: pointer;
+  background-color: var(--black-01);
+  border: 1px solid var(--green-01);
+  font-size: 24px;
+  border-radius: 10px;
+  color: var(--green-01);
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+.brief .form .checkboxes .badge.active {
+  background-color: var(--green-01);
+  color: var(--black-01);
+}
+
+.brief .form .project {
+  width: 100%;
+}
+
+.brief .form .project .suggestion {
+  color: hsla(0, 0%, 100%, 28%);
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 525px;
+  margin-top: -20px;
+  margin-bottom: 22px;
+}
+
+.brief .form .project textarea {
+  padding: 15px 21px;
+  background-color: var(--black-01);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "tiktokSans", "tiktokSans Fallback";
+  color: hsla(0, 0%, 100%, 0.5);
+  width: 100%;
+  min-height: 280px;
+  resize: none;
+  margin-bottom: 22px;
+}
+
+.brief .form .project textarea::placeholder {
+  font-size: 24px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.16);
+}
+
+.brief .form .project .file {
+  background-color: var(--black-01);
+  color: hsla(0, 0%, 100%, 0.16);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.brief .form .project .file input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.brief .form .deadlines input[type="text"] {
+  padding: 15px 22px !important;
+  color: hsla(0, 0%, 100%, 50%);
+  border: 1px solid var(--green-01);
+  background-color: var(--black-01);
+  border-radius: 10px;
+  font-size: 24px;
+  outline: none;
+  width: 100%;
+  max-width: 400px;
+}
+
+.brief .form .deadlines input[type="text"]::placeholder {
+  color: hsla(0, 0%, 100%, 16%);
+}
+
+.brief .form button {
+  width: 100%;
+  font-weight: 400;
+  font-size: 30px;
+  font-family: "tiktokSans", "tiktokSans Fallback";
+  padding: 26px;
+  border: 1px solid var(--green-01);
+  outline: none;
+  background-color: transparent;
+  color: var(--green-01);
+  border-radius: 40px;
+  line-height: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.brief .form button:hover {
+  background-color: var(--green-01);
+  color: var(--black-01);
+}
+
+.brief .steps {
+  width: 40%;
+}
+
+.brief .steps div {
+  background-color: var(--gray-05);
+  padding: 40px 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 40px;
+}
+
+.brief .steps div p {
+  color: rgba(234, 234, 234, 0.5);
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.brief .steps div p span {
+  color: var(--green-01);
+}
+
+.brief .steps a {
+  border: 1px solid var(--green-01);
+  width: 100%;
+  padding: 27px 0;
+  text-align: center;
+  color: var(--green-01);
+  border-radius: 34px;
+  margin-top: 21px;
+  display: block;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+@media (max-width: 1360px) {
+  .brief {
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .brief .form .block {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+  }
+  
+  .brief .form .block > p {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .brief .form .contacts div {
+    gap: 15px;
+  }
+  
+  .brief .form .checkboxes {
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  
+  .brief .form .checkboxes label div {
+    font-size: 20px;
+    padding: 14px;
+  }
+  
+  .brief .form .project {
+    width: 100%;
+  }
+  
+  .brief .form .project .suggestion {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .brief .form .project textarea {
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .brief .form .project textarea::placeholder {
+    font-size: 20px;
+  }
+  
+  .brief .form .project .file {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .brief .form .project .file img {
+    scale: 0.8;
+  }
+  
+  .brief .form .deadlines input[type="text"] {
+    padding: 14px !important;
+    font-size: 20px;
+  }
+  
+  .brief .form button {
+    font-size: 26px;
+    padding: 22px;
+  }
+  
+  .brief .steps div {
+    padding: 20px 30px;
+    gap: 20px;
+  }
+  
+  .brief .steps div p {
+    font-size: 28px;
+  }
+  
+  .brief .steps a {
+    padding: 15px 0;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .brief {
+    gap: 40px;
+    flex-direction: column;
+  }
+  
+  .brief .form {
+    width: 100%;
+    order: 2;
+  }
+  
+  .brief .form .contacts div {
+    flex-direction: column;
+  }
+  
+  .brief .steps {
+    width: 100%;
+    order: 1;
+  }
+}

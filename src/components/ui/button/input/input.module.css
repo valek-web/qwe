@@ -1,0 +1,24 @@
+.input {
+  width: 100%;
+  padding: 15px 27px;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: var(--black-01);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+
+
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 16%);
+}
+
+@media (max-width: 1360px) {
+  .input {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
